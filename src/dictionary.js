@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Result from "./results";
 export default function Dictionary() {
   let [keyWord, setKeyword] = useState("");
 
   function handleResponse(result) {
-    console.log(result.data.meanings[0]);
+    console.log(result.data.meanings[1].definition);
   }
   function search(event) {
     event.preventDefault();
