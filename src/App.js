@@ -11,8 +11,7 @@ function App() {
       <img src={logo} className="App-logo" alt="logo" />
       <header className="App-header">
         <Dictionary />
-        <p>Edit</p>
-        <Results />
+        <p>Test Text</p>
       </header>
     </div>
   );
