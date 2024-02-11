@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Result from "./results";
+import Results from "./results";
 export default function Dictionary() {
   let [keyWord, setKeyword] = useState("");
+  let [results, setResults] = useState({}); //We need to do this to send the result to the Results component at another page
 
   function handleResponse(result) {
-    console.log(result.data.meanings[1].definition);
+    console.log(result.data.meanings[0].definition);
+    setResults(result.data.meanings[0].definition); //This is how we set somethjing to use at another function
   }
   function search(event) {
     event.preventDefault();
@@ -27,6 +29,10 @@ export default function Dictionary() {
           onChange={handleKeywordChange}
         ></input>
       </form>
+      <small className="results">
+        {" "}
+        <Results results={results} />
+      </small>
     </div>
   );
 }

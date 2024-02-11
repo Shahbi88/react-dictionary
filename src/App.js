@@ -1,6 +1,7 @@
 import logo from "./logo-dictionary.png";
 import "./App.css";
 import Dictionary from "./dictionary";
+import Results from "./results";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <header className="App-header">
         <Dictionary />
         <p>Edit</p>
+        <Results />
       </header>
     </div>
   );
