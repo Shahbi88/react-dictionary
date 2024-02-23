@@ -28,12 +28,14 @@ form {
 }
 input {
   margin: 10px;
-  display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 800px;
+  color: darkblue;
+  padding: 10px;
+  border-color: #282c34;
 }
 .dictionary {
   background-color: rgba(121, 184, 193, 0.728);
