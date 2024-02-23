@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <div>Welcome to the Dictionary App</div>
+      <div className="welcome">Welcome to the Dictionary App</div>
       <img src={logo} className="App-logo" alt="logo" />
       <header className="App-header">
         <div>

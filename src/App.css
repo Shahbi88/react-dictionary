@@ -1,3 +1,6 @@
+.welcome {
+  padding: 20px;
+}
 .App {
   text-align: center;
   padding: 60px;
@@ -26,12 +29,27 @@
   display: block;
   padding: 30px;
 }
-
+strong {
+  color: rgb(182, 156, 156);
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
 .synonyms {
   color: rgb(202, 61, 202);
   font-size: small;
   display: block;
   line-height: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.phonetics {
+  color: white;
+  font-size: small;
+  display: block;
+  padding: 40px;
+  line-height: 40px;
+  font-style: italic;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

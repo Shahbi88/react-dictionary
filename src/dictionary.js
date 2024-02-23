@@ -3,17 +3,21 @@ import axios from "axios";
 import Results from "./results";
 import Synonyms from "./synonyms";
 import "./App.css";
+import Phonetics from "./phonetics";
 
 export default function Dictionary() {
   let [keyWord, setKeyword] = useState("");
   let [results, setResults] = useState(null); //We need to do this to send the result to the Results component at another page
   let [synonyms, setSynonyms] = useState(null);
+  let [phonetics, setPhonetics] = useState(null);
   function handleResponse(result) {
     console.log(result.data.meanings);
+    console.log(result.data.phonetic);
     console.log(result.data.meanings[0].synonyms);
 
     setResults(result.data.meanings[0].definition); //This is how we set somethjing to use at another function
     setSynonyms(result.data.meanings[0].synonyms);
+    setPhonetics(result.data.phonetic);
   }
 
   function search(event) {
@@ -42,6 +46,7 @@ export default function Dictionary() {
       </small>
 
       <Synonyms synonyms={synonyms} />
+      <Phonetics phonetics={phonetics} />
     </div>
   );
 }
