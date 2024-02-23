@@ -16,7 +16,9 @@ function App() {
           <strong>The definition of..</strong>
           <Dictionary />
         </div>
-        <p>Test Text from App.JS page</p>
+        <small>
+          <p>Hello from App.JS</p>
+        </small>
       </header>
     </div>
   );

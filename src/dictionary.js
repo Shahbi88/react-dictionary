@@ -49,6 +49,7 @@ export default function Dictionary() {
         {" "}
         <Results results={results} />
       </small>
+
       <Synonyms synonyms={synonyms} />
       <Example example={example} />
       <Phonetics phonetics={phonetics} />
