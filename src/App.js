@@ -19,7 +19,8 @@ function App() {
         <small>
           <p className="footer">
             Coded by <a href="https://www.rihabazar.co.uk/">Rihab Azar</a> and
-            is Open-Sourced on <a href="">Github</a>
+            is Open-Sourced on{" "}
+            <a href="https://github.com/Shahbi88/react-dictionary">Github</a>
           </p>
         </small>
       </header>
