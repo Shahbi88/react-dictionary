@@ -9,8 +9,12 @@ function App() {
       <div>Welcome to the Dictionary App</div>
       <img src={logo} className="App-logo" alt="logo" />
       <header className="App-header">
-        <Dictionary />
-        <p>Test Text</p>
+        <div>
+          {" "}
+          <strong>The definition of..</strong>
+          <Dictionary />
+        </div>
+        <p>Test Text from App.JS page</p>
       </header>
     </div>
   );

@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./results";
+import Synonyms from "./synonyms";
+import "./App.css";
 
 export default function Dictionary() {
   let [keyWord, setKeyword] = useState("");
   let [results, setResults] = useState(null); //We need to do this to send the result to the Results component at another page
-
+  let [synonyms, setSynonyms] = useState(null);
   function handleResponse(result) {
-    console.log(result.data.meanings[0].definition);
+    console.log(result.data.meanings);
+    console.log(result.data.meanings[0].synonyms);
+
     setResults(result.data.meanings[0].definition); //This is how we set somethjing to use at another function
+    setSynonyms(result.data.meanings[0].synonyms);
   }
+
   function search(event) {
     event.preventDefault();
     alert(`searching for ${keyWord}`);
@@ -34,6 +40,8 @@ export default function Dictionary() {
         {" "}
         <Results results={results} />
       </small>
+
+      <Synonyms synonyms={synonyms} />
     </div>
   );
 }

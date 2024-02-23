@@ -27,6 +27,14 @@
   padding: 30px;
 }
 
+.synonyms {
+  color: rgb(202, 61, 202);
+  font-size: small;
+  display: block;
+  line-height: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 @media (prefers-reduced-motion: no-preference) {
 }
 
