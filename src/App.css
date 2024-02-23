@@ -92,6 +92,15 @@ strong {
   margin: 20px;
   border-radius: 10px;
 }
+
+img {
+  max-block-size: 250px;
+  align-self: center;
+}
+.photo {
+  margin: 20px;
+  align-self: center;
+}
 @media (max-width: 800px) {
   .App {
     padding: 0px;
