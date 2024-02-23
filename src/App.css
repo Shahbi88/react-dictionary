@@ -1,14 +1,23 @@
 .welcome {
   padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .App {
   text-align: center;
-  padding: 60px;
+  padding: 100px;
+  padding-top: 40px;
 }
 
 .App-logo {
-  height: 20vmin;
-  pointer-events: none;
+  height: 15vmin;
+  margin-left: 20px;
 }
 
 .dictionary {
@@ -22,18 +31,21 @@
 }
 .results {
   color: #282c34;
-  line-height: 30px;
+  line-height: 45px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
+  font-size: 40px;
+
   letter-spacing: normal;
   display: block;
   padding: 30px;
 }
 strong {
-  color: rgb(182, 156, 156);
+  color: rgb(226, 145, 145);
   display: flex;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .synonyms {
   color: rgb(202, 61, 202);
@@ -43,17 +55,30 @@ strong {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.example {
+  color: #a40a08;
+  font-size: small;
+  display: block;
+  padding: 20px;
+  line-height: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .phonetics {
   color: white;
   font-size: small;
   display: block;
-  padding: 40px;
+  padding: 20px;
   line-height: 40px;
   font-style: italic;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-@media (prefers-reduced-motion: no-preference) {
+@media (max-width: 800px) {
+  .App {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 .App-header {
