@@ -114,3 +114,6 @@ p {
     "Lucida Sans", Arial, sans-serif;
   font-size: small;
 }
+a {
+  color: rgba(255, 255, 255, 0.67);
+}

@@ -17,7 +17,10 @@ function App() {
           <Dictionary />
         </div>
         <small>
-          <p>Hello from App.JS</p>
+          <p className="footer">
+            Coded by <a href="https://www.rihabazar.co.uk/">Rihab Azar</a> and
+            is Open-Sourced on <a href="">Github</a>
+          </p>
         </small>
       </header>
     </div>
