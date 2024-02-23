@@ -21,7 +21,20 @@
   height: 15vmin;
   margin-left: 20px;
 }
-
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+}
 .dictionary {
   background-color: rgba(121, 184, 193, 0.728);
 
@@ -129,6 +142,19 @@ a {
 }
 
 @media (max-width: 800px) {
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+  }
   .App {
     padding-top: 15px;
     display: block;
