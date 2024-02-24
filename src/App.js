@@ -20,8 +20,8 @@ function App() {
           <p className="footer">
             Coded by <a href="https://www.rihabazar.co.uk/">Rihab Azar</a> , is
             open-sourced on{" "}
-            <a href="https://github.com/Shahbi88/react-dictionary">Github</a>{" "}
-            and hosted on{" "}
+            <a href="https://github.com/Shahbi88/react-dictionary">Github</a>
+            <br /> and hosted on{" "}
             <a href="https://sunny-belekoy-ac520e.netlify.app/">Netlify</a>
           </p>
         </small>
