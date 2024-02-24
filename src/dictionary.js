@@ -8,7 +8,7 @@ import Example from "./example";
 import Photo from "./photo";
 
 export default function Dictionary() {
-  let [keyWord, setKeyword] = useState("");
+  let [keyWord, setKeyword] = useState(null);
   let [results, setResults] = useState(null); //We need to do this to send the result to the Results component at another page
   let [synonyms, setSynonyms] = useState(null);
   let [phonetics, setPhonetics] = useState(null);
